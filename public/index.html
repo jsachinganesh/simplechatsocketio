@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<script defer src="bootjs/fontawesome-all.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-5 text-center">Simple Chat</h1>
+        <div class="chatBox">
+            <ul class="displayMessage w-100 border mb-5 overflow-auto" style="height: 400px;">
+                <li class="m-2">
+                    <div class="name bold"><strong>Mike</strong></div>
+                    <div class="message">Hi Everyone</div>
+                </li>
+                <li class="m-2">
+                    <div class="name">Mike</div>
+                    <div class="message">Hi Everyone</div>
+                </li>
+                <li class="m-2">
+                    <div class="name">Mike</div>
+                    <div class="message">Hi Everyone</div>
+                </li>
+               
+            </ul>
+            <form class="input-form">
+                <div class="input-group mb-3">
+                    <input type="text" class="messageBox form-control" placeholder="Enter your message" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="bootjs/bootstrap.bundle.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
